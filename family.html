@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family List</title>
+</head>
+<body>
+    <h1>Family List</h1>
+    <ul>
+        {% for member in members %}
+        <li>{{ member[1] }} - {{ member[2] }} years old - {{ member[3] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
